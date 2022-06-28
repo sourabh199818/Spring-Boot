@@ -1,0 +1,25 @@
+//Creation Of a database
+Create  database Employee; 
+
+Creation of a table 
+
+Create table employee(e_id int not null, 
+                     e_name varchar(20), 
+                     e_salary int, 
+                     e_age int, 
+                     e_gender varchar(20), 
+                     e_dept varchar(20),
+                     primary key(e_id))
+                     
+//Insertion of a tables 
+
+Insert into employee values(1, 'sam', 974637, 25, 'Male', 'operations');
+Insert into employee values(2, 'Bob', 904634, 22, 'Male', 'support');
+Insert into employee values(3, 'Meenakshi', 9438274, 23, 'Female', 'Finance');
+Insert into employee values(4, 'Shyam', 9044342, 20, 'Male', 'it');
+
+
+//Selection a table/data
+Select * from employee 
+
+                     
