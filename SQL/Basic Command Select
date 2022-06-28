@@ -1,0 +1,25 @@
+//select command 
+
+Select * from Employee where name ='sam' 
+
+Select * from Employee where name ='Meenakshi' or id= 1
+
+Select * from Employee where name In ('Meenakshi','sam','Bob')
+
+Select e_name, e_gender, e_salary, FROM Employee
+
+Select DISTINCT e_gender FROM employee
+
+Select name FROM Employee  where name Like '%m' 
+
+Select name FROM Employee  where name Like 's%'  
+
+Select name FROM Employee  where name Like '%a%'
+
+//Sorting rows using order by
+
+Select name from Employee order by name
+
+Select id from Employee order by id asc
+
+Select id from Employee  order by id desc
