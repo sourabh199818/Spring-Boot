@@ -1,8 +1,11 @@
 package com.example.jwt.controller;
 
-
+//importing required library 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+
+//Annotations
 
 @RestController
 public class Home {
