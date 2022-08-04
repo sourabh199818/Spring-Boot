@@ -1,5 +1,6 @@
 package com.example.jwt.config;
 
+//Importing required library 
 import com.example.jwt.Helper.JwtUtil;
 import com.example.jwt.services.StudentDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +19,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-
+//Annotation
 @Component
 public class JWTAuthen extends OncePerRequestFilter {
 
