@@ -1,5 +1,6 @@
 package com.example.jwt.controller;
 
+//importing required library 
 import com.example.jwt.Helper.JwtUtil;
 import com.example.jwt.model.JwtRequest;
 import com.example.jwt.model.JwtResponse;
@@ -17,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 
+//Annotations
 
 @RestController
 public class JwtController {
