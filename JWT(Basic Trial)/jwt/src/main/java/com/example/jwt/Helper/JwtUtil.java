@@ -2,16 +2,18 @@ package com.example.jwt.Helper;
 //this Methods is for generating token
 // Also Validate
 
+//Importing required library 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
-
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Function;
+
+//Annotation
 
 @Component
 public class JwtUtil {
