@@ -1,0 +1,53 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<div class="container">
+  <div class="row">
+    <div id="custom-search-input">
+      <div class="input-group col-md-12" style="text-align: center">
+        <input type="text" class="search-query form-control" placeholder="Search With Id"  name="id" [(ngModel)]="selectedId"/>
+        <span class="input-group-btn">
+                                        <button class="btn btn-danger" type="button" (click)="findUserById()">
+                                            <span class=" glyphicon glyphicon-search"></span>
+                                        </button>
+                                    </span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="container">
+    <div class="row col-md-6 col-md-offset-2 custyle">
+      <table class="table table-striped custab">
+        <thead>
+        <tr>
+          <th>Id</th>
+          <th>firstname</th>
+          <th>lastname</th>
+          <th>emailId</th>
+          <th>Father_name</th>
+          <th>Address</th>
+          <th>Phone_no</th>
+          <th>Course</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let user of students">
+          <td>{{user.id}}</td>
+          <td>{{user.firstname}}</td>
+          <td>{{user.lastname}}</td>
+          <td>{{user.emailId}}</td>
+          <td>{{user.father_name}}</td>
+          <td>{{user.address}}</td>
+          <td>{{user.phone_no}}</td>
+          <td>{{user.course}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
